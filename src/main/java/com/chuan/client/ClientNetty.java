@@ -25,7 +25,7 @@ public class ClientNetty {
 	public static boolean setChannel(Channel channel){
 		ClientNetty.channel.set(channel);
 		return true;
-	}
+	} 
 	
 	public static boolean writeandflash(ByteBuf msg){
 		channel.get().writeAndFlush(Unpooled.wrappedBuffer(msg));
